@@ -9,7 +9,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 
 export function Sidebar() {
     return (
-        <div className="flex ">
+        <div className="flex">
             <aside className="h-full w-80 bg-gray-900 text-white flex flex-col p-2">
                 <div className="flex items-center text-xl " >
                     <img className="w-20 h-20" src={logotipo} alt="" />
@@ -36,7 +36,7 @@ export function Sidebar() {
 
                 </nav>
 
-                <div className="flex items-center gap-3  p-2 bg-gray-800 rounded-lg mt-10">
+                <div className="flex items-center gap-3  p-2 bg-gray-800 rounded-lg mt-50">
 
                     <Avatar >
                         <AvatarImage src="" />
