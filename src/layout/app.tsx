@@ -19,7 +19,7 @@ export function AppLayout() {
 
             {/* botão mobile */}
             <button
-                className="md:hidden p-3 fixed top-2 right-2 z-50 bg-gray-900 text-white rounded"
+                className="md:hidden p-3 fixed top-2 left-60 z-50 bg-gray-900 text-white rounded"
                 onClick={openSidebar}
             >
                 <Menu className="w-3 h-3" />
