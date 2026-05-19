@@ -4,7 +4,7 @@ import { Dashboard } from "./page/dashboard/dashboard"
 
 import { NotFound } from "./404"
 import Historico from "./page/history/historico"
-import Alertas from "./page/alert/alertas"
+import Alertas from "./page/alert/alert"
 
 
 export const routes = createBrowserRouter([
