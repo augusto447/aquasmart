@@ -23,7 +23,7 @@ const alerts = [
 
 export default function Alertas() {
     return (
-        <div className="p-6 w-full min-h-screen">
+        <div className="p-4 sm:p-6 space-y-5 w-full h-screen">
 
             <h1 className="text-2xl font-bold mb-2">Alertas do Sistema</h1>
             <p className="text-gray-500 mb-6">

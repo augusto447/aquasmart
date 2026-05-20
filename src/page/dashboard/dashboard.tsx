@@ -14,7 +14,7 @@ import SensorReadings from "./SensorReadings";
 
 export function Dashboard() {
     return (
-        <div className="p-4 sm:p-6 space-y-6 w-full min-h-screen">
+        <div className="p-4 sm:p-6 space-y-5 w-full h-screen">
 
             {/* HEADER */}
             <div className="flex items-center justify-between sm:flex-row sm:justify-between sm:items-start">
