@@ -12,7 +12,7 @@ export function Sidebar() {
         <div className="flex">
             <aside className=" w-80 h-screen bg-gray-900 text-white flex flex-col p-2">
                 <div className="flex items-center text-xl " >
-                    <img className="md:w-20 md:h-20 w-10 h-10" src={logotipo} alt="logotipo" />
+                    <img className="md:w-15 md:h-15 w-10 h-10" src={logotipo} alt="logotipo" />
                     <div className="flex flex-col">
                         <span className="md:text-2xl text-xs">Aquasmart</span>
                         <span className="md:text-sm text-xs">Aquicultura Inteligente</span>
