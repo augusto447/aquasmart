@@ -16,7 +16,7 @@ export function Dashboard() {
     return (
         <div className="p-4 sm:p-6 space-y-5 w-full h-screen">
 
-            {/* HEADER */}
+
             <div className="flex items-center justify-between sm:flex-row sm:justify-between sm:items-start">
                 <div>
                     <h1 className="text-xl sm:text-2xl font-bold">
@@ -30,10 +30,10 @@ export function Dashboard() {
                 <ModeToggle />
             </div>
 
-            {/* CARDS */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4">
 
-                {/* pH */}
+
                 <Card className="dark:bg-black dark:border-gray-800">
                     <CardHeader className="flex flex-row items-center gap-2 pb-2">
                         <Droplet className="w-4 h-4 text-blue-500" />
@@ -51,7 +51,7 @@ export function Dashboard() {
                     </CardContent>
                 </Card>
 
-                {/* Temperatura */}
+
                 <Card className="dark:bg-black dark:border-gray-800">
                     <CardHeader className="flex flex-row items-center gap-2 pb-2">
                         <Thermometer className="w-4 h-4 text-red-500" />
@@ -70,7 +70,7 @@ export function Dashboard() {
                     </CardContent>
                 </Card>
 
-                {/* Oxigénio */}
+
                 <Card className="dark:bg-black border-red-200 dark:border-red-900">
                     <CardHeader className="flex flex-row items-center gap-2 pb-2">
                         <Waves className="w-4 h-4 text-red-500" />
@@ -89,7 +89,7 @@ export function Dashboard() {
                     </CardContent>
                 </Card>
 
-                {/* Turbidez */}
+
                 <Card className="dark:bg-black dark:border-gray-800">
                     <CardHeader className="flex flex-row items-center gap-2 pb-2">
                         <CloudFog className="w-4 h-4 text-violet-500" />
@@ -108,7 +108,6 @@ export function Dashboard() {
                     </CardContent>
                 </Card>
 
-                {/* Amónio */}
                 <Card className="dark:bg-black dark:border-gray-800">
                     <CardHeader className="flex flex-row items-center gap-2 pb-2">
                         <FlaskConicalIcon className="w-4 h-4 text-green-500" />
@@ -128,15 +127,15 @@ export function Dashboard() {
                 </Card>
             </div>
 
-            {/* GRÁFICOS */}
+
             <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
 
-                {/* GRÁFICO PRINCIPAL */}
-                <div className="flex-1 lg:flex-[2] rounded-xl p-3 sm:p-4 shadow dark:bg-black dark:border dark:border-gray-800">
+
+                <div className="flex-1 lg:flex-[2] rounded-xl p-3 sm:p-4 shadow  dark:border dark:border-gray-800">
                     <AquacultureChart />
                 </div>
 
-                {/* LATERAL */}
+
                 <div className="flex-1 space-y-4">
 
                     <div className="rounded-xl p-3 sm:p-4 shadow dark:bg-black dark:border dark:border-gray-800">

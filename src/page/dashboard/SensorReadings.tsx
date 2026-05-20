@@ -13,6 +13,7 @@ const valueColor: Record<string, string> = {
     attn: "text-orange-700",
 };
 
+
 export default function SensorReadings() {
     return (
         <div>

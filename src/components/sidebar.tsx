@@ -10,15 +10,15 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 export function Sidebar() {
     return (
         <div className="flex">
-            <aside className=" w-80 h-screen bg-gray-900 text-white flex flex-col p-2 sticky top-0">
+            <aside className=" w-80 h-screen bg-gray-900 text-white flex flex-col p-2">
                 <div className="flex items-center text-xl " >
-                    <img className="w-20 h-20" src={logotipo} alt="logotipo" />
+                    <img className="md:w-20 md:h-20 w-10 h-10" src={logotipo} alt="logotipo" />
                     <div className="flex flex-col">
-                        <span className="text-2xl">Aquasmart</span>
-                        <span className="text-sm">Aquicultura Inteligente</span>
+                        <span className="md:text-2xl text-xs">Aquasmart</span>
+                        <span className="md:text-sm text-xs">Aquicultura Inteligente</span>
                     </div>
                 </div>
-                <nav className="flex flex-col text-gray-300  text-lg gap-5 mt-6 p-2">
+                <nav className="flex flex-col text-gray-300  text-lg gap-5 mt-6 md:p-2 p-0">
 
                     <Link className="flex items-center gap-3 hover:bg-blue-950 p-4 rounded-full" to="/">
                         <Home className="w-6 h-6" />

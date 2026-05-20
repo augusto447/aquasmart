@@ -36,7 +36,8 @@ export default function SensorStatusPie() {
                     >
                         {data.map((_, i) => (
                             <Cell key={i} fill={COLORS[i]} />
-                        ))}
+                        )
+                        )}
                     </Pie>
                     <Tooltip
                         formatter={(value, name, props) => [props.payload.sensors, name]}
