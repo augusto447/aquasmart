@@ -37,7 +37,7 @@ const statusBadge = {
 
 export default function Historico() {
     return (
-        <div className="p-4 sm:p-6 space-y-5 w-full h-screen">
+        <div className="p-4 sm:p-6 space-y-5 w-full h-screen    ">
 
             {/* HEADER */}
             <div>
