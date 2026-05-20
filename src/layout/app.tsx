@@ -9,59 +9,60 @@ export function AppLayout() {
     function openSidebar() {
         setOpen(true);
     }
-
-    function closeSidebar() {
+    function CloseSidebar() {
         setOpen(false);
     }
 
     return (
-        <div className="flex">
+        <div className="flex min-h-screen">
 
 
-            <button
-                className="md:hidden p-3 fixed top-2 left-60 z-50 bg-gray-900 text-white rounded"
-                onClick={openSidebar}
-            >
-                <Menu className="w-3 h-3" />
-            </button>
-
-
-            <div className="hidden md:block">
+            <div className="hidden md:block shrink-0">
                 <Sidebar />
             </div>
 
 
             {open && (
-                <div className="fixed inset-0 z-50 md:hidden">
-
+                <div className="fixed inset-0 z-50 md:hidden flex">
 
                     <div
                         className="absolute inset-0 bg-black/50"
-                        onClick={closeSidebar}
+                        onClick={openSidebar}
                     />
 
-
-                    <div className="relative w-72 h-full bg-gray-900 text-white z-50">
-
-
+                    <div className="relative w-64 h-full bg-gray-900 text-white z-10 flex flex-col">
                         <button
                             className="absolute top-3 right-3 text-white"
-                            onClick={closeSidebar}
+                            onClick={CloseSidebar}
                         >
-                            <X />
+                            <X className="w-5 h-5" />
                         </button>
-
-
                         <Sidebar />
                     </div>
                 </div>
             )}
 
 
-            <main className="flex-1 md:ml-0 overflow-y-auto">
-                <Outlet />
-            </main>
+            <div className="flex-1 flex flex-col min-w-0">
 
+
+                <header className="md:hidden flex items-center h-12 px-4 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-black shrink-0">
+                    <button
+                        onClick={openSidebar}
+                        className="p-1 rounded text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                        aria-label="Abrir menu"
+                    >
+                        <Menu className="w-5 h-5" />
+                    </button>
+                    <span className="ml-3 text-sm font-medium text-gray-700 dark:text-gray-200">
+                        AquaSmart
+                    </span>
+                </header>
+
+                <main className="flex-1 overflow-y-auto">
+                    <Outlet />
+                </main>
+            </div>
         </div>
     );
 }
