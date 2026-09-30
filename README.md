@@ -137,7 +137,7 @@ O ambiente pode ser executado através de **Docker Compose**, permitindo configu
 ### 1. Clonar o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/augusto447/aquasmart.git
 ```
 
 ### 2. Entrar na pasta
